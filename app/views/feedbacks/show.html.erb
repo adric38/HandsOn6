@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @feedback.message %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @feedback.name %>
+</p>
+
+<a class="btn btn-xs btn-default" href="https://twitter.com/intent/tweet?text= <%= @feedback.message %> <%= @feedback.name %>
+
+" type="button" name="button">Share on Twitter</button>
+
+<a button class="btn btn-xs btn-default" href="http://www.facebook.com/sharer.php?u=http://yourshorturl.com" type="button" name="button">Share on Facebook</button>
+
+
+  <!-- <a class="btn btn-xs btn-default" onclick="alert('hello')" type="button" name="button">Test on Clihttp://www.facebook.com/sharer.php?u=http://yourshorturl.comck</button> -->
+
+
+<%= link_to 'Edit', edit_feedback_path(@feedback) %> |
+<%= link_to 'Back', feedbacks_path %>
